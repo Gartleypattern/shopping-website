@@ -46,7 +46,7 @@ export const CardPopup = ({CardModalIsOpen, closeCardModal})=>{
                     color='green'
                 />
                 <h6 className='mt-5'>
-                    {!counter?'!سبد خرید شما خالی است':''}
+                    {!counter?'!!!سبد خرید شما خالی است':''}
                 </h6>
                 <div>
                     {items.map((item, index)=>{
