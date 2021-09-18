@@ -8,7 +8,7 @@ export const Contact = () =>{
     return(
         <div>
             <Header />
-            <img src='img/google-map.png' style={{width:'100%', height:'400px'}} alt='' />
+            <img src='img/map.png' style={{width:'100%', height:'400px'}} alt='' />
             <div className='container' style={{marginTop:'100px'}}>
                 <h5 className='mt-5' style={{fontWeight:'bold'}}>روش های تماس با وب سایت سایت آنلاین</h5>
                 <RightDivider 
