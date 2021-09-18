@@ -22,6 +22,7 @@ import { MakeContent } from './components/products/makeContent';
 import { ThirdParty } from './components/products/thirdParty';
 import { WebinarChecklist } from './components/products/webinarChecklist';
 import { ArticleChecklist } from './components/products/articleChecklist';
+import ScrollToTop from './components/scroll/scroll';
 import './App.scss';
 
 
@@ -29,12 +30,12 @@ function App() {
   return (
     <>
         <Router>
+            <ScrollToTop />
             <Switch>
                 <Route path='/' component={Home} exact={true} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/blog' component={Blog} />
-                <Route path='/shop' component={Shop} />
                 <Route path='/shop' component={Shop} />
                 <Route path='/register' component={Register} />
                 <Route path='/reset-password' component={resetPassword} />
