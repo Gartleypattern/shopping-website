@@ -1,7 +1,7 @@
 
 export const TextBox=({cardTitle, cardText})=>{
     return(
-            <div className="card shadow text-muted bg-light py-2 px-3" 
+            <div className="text-box  card shadow text-muted bg-light py-2 px-3" 
                 style={{maxWidth: '23rem', border:'none', borderRadius:'7px'}}>
                 <div class="card-body" >
                     <h5 

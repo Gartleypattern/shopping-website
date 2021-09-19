@@ -1,16 +1,25 @@
+import { CenterDivider } from "../diveder/centerDivider";
 import { RightDivider } from "../diveder/rightDivider";
 
 export const Footer= ()=>{
     return(
         <div className='container mt-5'>
             <div className='row'>
-                <div className='col'>
+                <div className='footer-content col-sm-12 col-lg-2'>
                    <h5 style={{fontWeight:'bold'}}>نماداعتماد الکترونیکی</h5>
                    <RightDivider width='50px' />
+                   <CenterDivider
+                        width = '40px'
+                        color = 'gray'
+                    />
                    <img className='mt-3' src='img/namad.png' alt='' />
                 </div>
-                <div className='col'>
+                <div className='footer-content col-sm-12 col-lg-3'>
                     <h5 style={{fontWeight:'bold'}}> چند آموزش  کلیدی </h5>
+                    <CenterDivider
+                        width = '40px'
+                        color = 'gray'
+                    />
                     <RightDivider width='50px' />
                     <ul className='mt-4'>
                         <li className='list-unstyled'>دیجیتال مارکتینگ</li>
@@ -20,9 +29,13 @@ export const Footer= ()=>{
                         <li className='list-unstyled'>افزایش رتبه سایت</li>
                     </ul>
                 </div>
-                <div className='col'>
+                <div className='footer-content col-sm-12 col-lg-3'>
                     <h5 style={{fontWeight:'bold'}}>پرفروش ترین محصولات</h5>
                     <RightDivider width='50px' />
+                    <CenterDivider
+                        width = '40px'
+                        color = 'gray'
+                    />
                         <div className='d-flex mt-3'>
                             <img src='img/ModaresMarja.jpg' style={{maxWidth:'80px', maxHeight:'80px'}} alt='' />
                             <div className='d-flex flex-column mt-2' style={{marginRight:'10px'}}>
@@ -41,9 +54,16 @@ export const Footer= ()=>{
                         </div>
                 </div>
 
-                <div className='col' style={{marginLeft:'20px'}}>
+                <div className='footer-content col-sm-12 col-lg-3' style={{marginLeft:'20px'}}>
                     <h5 style={{fontWeight:'bold'}}>آشنایی با مجموعه آنلاین</h5>
-                    <RightDivider width='50px' />
+                    <RightDivider 
+                        width='50px' 
+                    
+                    />
+                    <CenterDivider
+                        width = '40px'
+                        color = 'gray'
+                    />
                     <h6 className='mt-3'>سایت آنلاین با
                      20 سال سابقه به شما کمک می کند تا
                       آن را کسب و کارتان را راه اندازی کنید

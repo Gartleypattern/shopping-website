@@ -16,7 +16,7 @@ h1 {
     margin-left: 40px;
     margin: 5px 3px;
     padding: 7px 14px;
-    font-size: 1.15em;
+    font-size: 1em;
 }
 
 .menu a:hover{
@@ -29,6 +29,28 @@ h1 {
     z-index: 1030;
 }
 
+.mobile-menu {
+    display: none;
+}
 
+@media only screen and (max-width: 576px) {
+    .main-title {
+        padding: 0px 20px;
+    }
+    .text-box {
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .footer-font-size {
+        font-size: 15px !important;
+        padding: 5px 10px;
+    }
+    .mobile-menu {
+        display: block;
+    }
+  }
 
 

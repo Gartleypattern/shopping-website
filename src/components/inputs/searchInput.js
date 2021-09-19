@@ -1,6 +1,6 @@
-export const SearchInput = ({width, marginRight,marginTop})=>(
+export const SearchInput = ({width, marginRight})=>(
         <div 
-            className="input-group" 
+            className="input-group main-slide" 
             style={{width:`${width}`,marginRight:`${marginRight}`}}>
             <div className="input-group-prepend">
                 <span className="input-group-text" id="basic-addon1">
