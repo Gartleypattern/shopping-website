@@ -7,10 +7,14 @@ export const Footer= ()=>{
             <div className='row'>
                 <div className='footer-content col-sm-12 col-lg-2'>
                    <h5 style={{fontWeight:'bold'}}>نماداعتماد الکترونیکی</h5>
-                   <RightDivider width='50px' />
+                   <RightDivider 
+                        width='50px' 
+                        display='d-none d-sm-block'
+                    />
                    <CenterDivider
                         width = '40px'
                         color = 'gray'
+                        display = 'd-block d-sm-none'
                     />
                    <img className='mt-3' src='img/namad.png' alt='' />
                 </div>
@@ -19,22 +23,30 @@ export const Footer= ()=>{
                     <CenterDivider
                         width = '40px'
                         color = 'gray'
+                        display = 'd-block d-sm-none'
                     />
-                    <RightDivider width='50px' />
-                    <ul className='mt-4'>
+                    <RightDivider 
+                        width='50px'
+                        display='d-none d-sm-block' 
+                    />
+                    <div className='mt-4'>
                         <li className='list-unstyled'>دیجیتال مارکتینگ</li>
                         <li className='list-unstyled'>ایمیل مارکتینگ</li>
                         <li className='list-unstyled'>تبلیغ نویسی</li>
                         <li className='list-unstyled'>رازهای موفقیت</li>
                         <li className='list-unstyled'>افزایش رتبه سایت</li>
-                    </ul>
+                    </div>
                 </div>
                 <div className='footer-content col-sm-12 col-lg-3'>
                     <h5 style={{fontWeight:'bold'}}>پرفروش ترین محصولات</h5>
-                    <RightDivider width='50px' />
+                    <RightDivider 
+                        width='50px'
+                        display='d-none d-sm-block' 
+                    />
                     <CenterDivider
                         width = '40px'
                         color = 'gray'
+                        display = 'd-block d-sm-none'
                     />
                         <div className='d-flex mt-3'>
                             <img src='img/ModaresMarja.jpg' style={{maxWidth:'80px', maxHeight:'80px'}} alt='' />
@@ -57,12 +69,13 @@ export const Footer= ()=>{
                 <div className='footer-content col-sm-12 col-lg-3' style={{marginLeft:'20px'}}>
                     <h5 style={{fontWeight:'bold'}}>آشنایی با مجموعه آنلاین</h5>
                     <RightDivider 
-                        width='50px' 
-                    
+                        width='50px'
+                        display='d-none d-sm-block' 
                     />
                     <CenterDivider
                         width = '40px'
                         color = 'gray'
+                        display = 'd-block d-sm-none'
                     />
                     <h6 className='mt-3'>سایت آنلاین با
                      20 سال سابقه به شما کمک می کند تا

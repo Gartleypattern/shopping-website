@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 
-export const BreadCrump = (props)=>{
+export const BreadCrump = ({title, dilplay})=>{
     return(
-        <div style={{fontSize:'25px'}}>
+        <div className={`${dilplay}`} style={{fontSize:'25px'}}>
             <NavLink  
                 className='text-decoration-none' 
                 to='/'>خانه
-        </NavLink>/<span>{props.title}</span>
+        </NavLink>/<span>{title}</span>
         </div>
     );
 };
