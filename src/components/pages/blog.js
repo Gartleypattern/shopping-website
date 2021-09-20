@@ -29,6 +29,7 @@ export const Blog= () => {
                         <div className='col-xl-4 position-relative' 
                              style={{textAlign:'left'}}
                         >
+                            
                             <img 
                                 className='blog-img'
                                 src='img/InstagramAlgorithm.jpg' 
