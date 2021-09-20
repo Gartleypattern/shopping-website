@@ -8,7 +8,13 @@ export const Contact = () =>{
     return(
         <div>
             <Header />
-            <img src='img/map.jpg' style={{width:'100%', height:'400px'}} alt='' />
+            <img 
+                className='d-none d-sm-block'
+                src='img/map.jpg' 
+                style={{width:'100%', height:'400px'}} 
+                alt='' 
+            
+            />
             <div className='container' style={{marginTop:'100px'}}>
                 <h5 className='mt-5' style={{fontWeight:'bold'}}>روش های تماس با وب سایت سایت آنلاین</h5>
                 <RightDivider 

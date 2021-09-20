@@ -62,7 +62,7 @@ export const About= ()=> {
             <div className='container-fluid' style={{background:'#FAFAFA'}}>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col text-center' style={{margin:'80px 0px'}}>
+                        <div className='col-xl-6 text-center' style={{margin:'80px 0px'}}>
                             <img src='img/phone.png' style={{width:'80px'}} alt='' />
                             <div className='mt-4' style={{textAlign:'justify',lineHeight:'1'}}>
                                 <p>لطفا در صورت داشتن هرگونه پیشنهاد همکاری با ما تماس بگیرید. ما می‌دانیم که همواره در راه</p>
@@ -70,7 +70,7 @@ export const About= ()=> {
                                 <p> برخی از ایده‌های کنونی وب‌سایت مدیر سبز، نتیجه اعمال نظرات بازدیدکنندگان بوده است.</p>
                             </div>
                         </div>
-                        <div className='col text-center' style={{margin:'80px 0px', borderRight:'1px solid #F1F1F1'}}>
+                        <div className='col-xl-6 text-center' style={{margin:'80px 0px', borderRight:'1px solid #F1F1F1'}}>
                             <p>اگر پیشنهادی دارید، با ما تماس بگیرید.</p>
                             <div style={{lineHeight:'1'}}>
                                 <p className='mt-5'><strong>ایمیل : </strong>iman@yahoo.com</p>
