@@ -138,7 +138,7 @@ export const Blog= () => {
                                 />
                                 <Badge 
                                     badgeDate = '29'
-                                    badgeMonth = 'اسفند'
+                                    badgeMonth = ' اسفند'
                                     top='20px'
                                     right='20px'
                                 />
