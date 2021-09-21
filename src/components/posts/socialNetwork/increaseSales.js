@@ -1,9 +1,11 @@
-import { Copywrite } from "../../footer/copyright";
-import { Footer } from "../../footer/footer";
 import { Header } from "../../header/header";
+import { Footer } from "../../footer/footer";
+import { Copywrite } from "../../footer/copyright";
 import { CenterDivider } from "../../diveder/centerDivider";
 import { Badge } from "../../badges/badge";
-import { RightDivider } from "../../diveder/rightDivider";
+import RelatedPosts from "../../box/relatedPosts";
+import SinglePostForm from "../../forms/singlePostForm";
+import SinglePostSidebar from "../../sidebar/singlePostSidebar";
 
 export const IncreaseSales = ()=>(
     <>
@@ -11,8 +13,7 @@ export const IncreaseSales = ()=>(
         <div className='container-fluid' style={{background:'#F4F4F4'}}>
             <div className='container pt-5'>
                 <div className='row'>
-                    <div className='col-xl-1'></div>
-                    <div className='col-xl-7 position-relative' 
+                    <div className='col-xl-7 offset-xl-1 position-relative' 
                           style={{marginLeft:'50px'}}
                     >
                         <img 
@@ -66,49 +67,12 @@ export const IncreaseSales = ()=>(
                             <p className='text-justify'>اگر با همین کابل به یک کامپیوتر یا موبایل دارای ورودی USB type C وصل کنید، صدا به‌صورت دیجیتال به کامپیوتر یا موبایل منتقل می‌شود که کیفیت بسیار بالاتری دارد و کابل باعث افت کیفیت آن نمی‌شود. وقتی با جک 3.5 به یک موبایل یا کامپیوتر وصل می‌کنیم، اطلاعات به‌صورت آنالوگ فرستاده می‌شود که ممکن است با افت کیفیت مواجه شویم، ولی وقتی با این کابل به موبایل وصل می‌کنیم در واقع گیرنده Rode از طرف موبایل یک میکروفن تشخیص داده می‌شود و با بالاترین کیفیت ممکن 
                             می‌توانیم صدا را در موبایل یا کامپیوتر رکورد کنیم.
                             </p>
-                            <h5 className='text-success text-center mt-5' style={{fontWeight:'bold'}}>این مطالب را هم حتما بخوانید</h5>
+                            <h5 className='text-success text-center mt-5' style={{fontWeight:'bold'}}>مطالب مرتبط</h5>
                             <CenterDivider 
                                 width='30px'
                                 color='gray'
                             />
-                            <div className='row text-center mt-4'>
-                                <div className='col-xl-3'>
-                                    <img 
-                                        src='img/Instagram-featured.jpg' 
-                                        style={{width:'161px', height:'90px'}} 
-                                        className='rounded'
-                                        alt=''
-                                    />
-                                    <h6 style={{fontWeight:'bold', marginTop:'10px'}}>روش استفاده از اینستاگرام</h6>
-                                </div>
-                                <div className='col-xl-3'>
-                                    <img 
-                                        src='img/SevenStrategyQuestions-featured.jpg' 
-                                        style={{width:'161px', height:'90px'}} 
-                                        className='rounded'
-                                        alt=''
-                                    />
-                                    <h6 style={{fontWeight:'bold', marginTop:'10px'}}>خلاصه کتاب 7 سوال درباره استراتژی</h6>
-                                </div>
-                                <div className='col-xl-3'>
-                                    <img 
-                                        src='img/Products-featured.jpg' 
-                                        style={{width:'161px', height:'90px'}} 
-                                        className='rounded'
-                                        alt=''
-                                    />
-                                    <h6 style={{fontWeight:'bold', marginTop:'10px'}}>خلاصه کتاب 7 سوال درباره استراتژی</h6>
-                                </div>
-                                <div className='col-xl-3'>
-                                    <img 
-                                        src='img/SeoSkill-featured.jpg' 
-                                        style={{width:'161px', height:'90px'}} 
-                                        className='rounded'
-                                        alt=''
-                                    />
-                                    <h6 style={{fontWeight:'bold', marginTop:'10px'}}>خلاصه کتاب 7 سوال درباره استراتژی</h6>
-                                </div>
-                            </div>
+                            <RelatedPosts />
                         </div>
                         <div className='row my-3 p-3 post-single-text' 
                              style={{
@@ -121,35 +85,7 @@ export const IncreaseSales = ()=>(
                             <div className='col-xl-12'>
                                 <h3 className='text-success'>دیدگاهتان را بنویسید</h3>
                                 <p>نشانی ایمیل شما منتشر نخواهد شد</p>
-                                <form className='form-group' style={{margin:'0px auto', width:'90%'}}>
-                                    <label className='mb-2' for='note' style={{fontWeight:'bold'}}>دیدگاه</label>
-                                    <textarea 
-                                        id='note'
-                                        className='form-control' 
-                                        rows='5'
-                                    >
-                                </textarea>
-                                <div className='row mt-3'>
-                                    <div className='col' >
-                                        <label className='mb-2' for='lName' style={{fontWeight:'bold'}} >نام</label>
-                                        <input className='form-control' id='lName' type='text' name='lName' />
-                                    </div>
-                                    <div className='col' >
-                                        <label className='mb-2' for='fName' style={{fontWeight:'bold'}}>ایمیل</label>
-                                        <input className='form-control' id='fName' type='email' name='email' />
-                                    </div>
-                                </div>
-                                <div className='form-group mt-4'>
-                                    <select className='form-control'>
-                                        <option className='selected'>فقط دریافت پاسخ دیدگاه های خودم</option>
-                                        <option>مشترک نمی شوم</option>
-                                        <option>دریافت همه دیدگاه های این نوشته</option>
-                                        <option>فقط دریافت دیدگاه های پاسخ خودم</option>
-                                    </select>
-                                </div>
-                                <p className='mt-3' style={{fontWeight:'bold'}}>من را با ایمیل از دیدگاه های آتی این نوشته مطلع کنید. همچنین می توانید بدون ارسال دیدگاه مشترک شوید</p>
-                                <button className='btn-lg btn-success'>فرستادن دیدگاه</button>
-                            </form>
+                                <SinglePostForm />
                             </div>
                         </div>
                     </div>
@@ -160,45 +96,7 @@ export const IncreaseSales = ()=>(
                               borderRadius:'7px'
                             }}
                     >
-                        <h5 className='mt-3' style={{fontWeight:'bold'}}>این مطلب را هم بخوانید</h5>
-                        <RightDivider 
-                            width='30px'
-                        />
-                        <img 
-                            className='mt-4'
-                            src='img/ads.jpg' 
-                            style={{width:'300px', height:'170px'}} 
-                            alt=''
-                        />
-                        <h5 className='mt-3'>تولید سریع محتوا</h5>
-                        <img 
-                            className='mt-3' 
-                            src='img/ContentMarketingTips.jpg' 
-                            style={{width:'300px', height:'170px'}} 
-                            alt=''
-                        />
-                        <h5 className='mt-4'>هشت نکته مهم درباره بازاریابی محتوا</h5>
-                        <img 
-                            className='mt-3' 
-                            src='img/InstagraMarketing.jpg' 
-                            style={{width:'300px', height:'170px'}} 
-                            alt=''
-                        />
-                        <h5 className='mt-4'>11 روند مهم بازاریابی اینستاگرام</h5>
-                        <img 
-                            className='mt-3' 
-                            src='img/PresentationTips.jpg' 
-                            style={{width:'300px', height:'170px'}} 
-                            alt=''
-                        />
-                        <h5 className='mt-4'>نکاتی درباره سخنرانی خوب</h5>
-                        <img 
-                            className='mt-3' 
-                            src='img/Rework-book-summary.jpg' 
-                            style={{width:'300px', height:'170px'}} 
-                            alt=''
-                        />
-                        <h5 className='mt-4'>6 دیدگاه دور ریختنی درباره کسب و کار</h5>
+                        <SinglePostSidebar />
                     </div>
                     <div className='col-xl-1'></div>
                 </div>
