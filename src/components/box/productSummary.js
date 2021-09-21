@@ -21,11 +21,20 @@ export const ProductSummary = ({title, p1, p2, p3, p4, p5, p6, price, priceTitle
         return(
         <>
          <div className='container pt-5 pb-5'>
-                <div className='row  px-4 py-4 mx-3 mt-3' style={{background:'white'}}>
-                    <div className='col'>
-                        <img src={src} style={{width:'510px', height:'500px'}} alt='' />
+                <div 
+                    className='row px-4 py-4 mx-3 mt-3' 
+                    style={{background:'white'}}
+                >
+                    <div className='col-xl-6'>
+                        <img 
+                            className='product-summary-img'
+                            src={src} 
+                            style={{width:'510px', height:'500px'}} 
+                            alt='' 
+                            
+                            />
                     </div>
-                    <div className='col'>
+                    <div className='col-xl-6'>
                         <h1 className='text-success' style={{fontSize:'1.5em', fontWeight:'bold'}}>{title}</h1>
                         <RightDivider 
                             width='60px'

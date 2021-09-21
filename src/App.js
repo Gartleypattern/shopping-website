@@ -23,6 +23,7 @@ import { ThirdParty } from './components/products/thirdParty';
 import { WebinarChecklist } from './components/products/webinarChecklist';
 import { ArticleChecklist } from './components/products/articleChecklist';
 import ScrollToTop from './components/scroll/scroll';
+import login from './components/pages/login';
 import './App.scss';
 
 
@@ -54,6 +55,7 @@ function App() {
                 <Route path='/فیلم سومین همایش مدرسان مرجع' component={ThirdParty} />
                 <Route path='/چک لیست وبینار' component={WebinarChecklist} />
                 <Route path='/چک لیست مقاله' component={ArticleChecklist} />
+                <Route path='/login' component={login} />
                 <Route path='*' component={NotFound} />
             </Switch>
           </Router>

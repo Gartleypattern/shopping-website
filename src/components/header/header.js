@@ -71,26 +71,36 @@ export const Header = ()=> {
                             to='/'
                         >خانه
                         </NavLink>
-                    <NavLink 
-                        className='text-dark text-decoration-none nav-link' 
-                        to='/shop'
-                        >فروشگاه
-                    </NavLink>
-                    <NavLink 
-                        className='text-dark text-decoration-none nav-link' 
-                        to='/blog'
-                        >بلاگ
-                    </NavLink>
-                    <NavLink
-                        className='text-dark text-decoration-none nav-link' 
-                        to='/about'
-                        >درباره ما
-                    </NavLink>
-                    <NavLink 
-                        className='text-dark text-decoration-none nav-link' 
-                        to='/contact'
-                        >ارتباط با ما
-                    </NavLink>
+                        <NavLink 
+                            className='text-dark text-decoration-none nav-link' 
+                            to='/shop'
+                            >فروشگاه
+                        </NavLink>
+                        <NavLink 
+                            className='text-dark text-decoration-none nav-link' 
+                            to='/blog'
+                            >بلاگ
+                        </NavLink>
+                        <NavLink
+                            className='text-dark text-decoration-none nav-link' 
+                            to='/about'
+                            >درباره ما
+                        </NavLink>
+                        <NavLink 
+                            className='text-dark text-decoration-none nav-link' 
+                            to='/contact'
+                            >ارتباط با ما
+                        </NavLink>
+                        <NavLink 
+                            className='text-dark text-decoration-none nav-link' 
+                            to='/login'
+                            >ورود
+                        </NavLink>
+                        <NavLink 
+                            className='text-dark text-decoration-none nav-link' 
+                            to='/register'
+                            >ثبت نام
+                        </NavLink>
                     </nav>
                 </div>
             </div>
