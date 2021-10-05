@@ -4,13 +4,16 @@ import { LoginPopup } from "../modals/loginPopup";
 import { CardPopup } from "../modals/cardPopup";
 import { SearchInput } from "../inputs/searchInput";
 import { useSelector} from 'react-redux';
+import DropdownMenu from "./dropdownMenu";
 
 
 export const Header = ()=> {
     const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);    
     const [cardModalIsOpen, setCardModalIsOpen] = useState(false); 
-    const [showNavbar, setShowNavbar] = useState('false');   
-    
+    const [showNavbar, setShowNavbar] = useState(false); 
+    const[dropmenu, setDropmenu] = useState(false);  
+    const loginStatus = useSelector(state => state.login);
+
     const closeLoginModal= ()=>{
         setLoginModalIsOpen(false);
     }
@@ -31,6 +34,13 @@ export const Header = ()=> {
         e.preventDefault();
         closeLoginModal();
       };
+    
+    const showDropmenu = () => {
+          setDropmenu(true);
+      }
+    const hideDropmenu = () => {
+          setDropmenu(false);
+      }
 
     const counter = useSelector((state) => state.counter);
     
@@ -108,7 +118,6 @@ export const Header = ()=> {
             {/* desktop menu */}
 
             <div className='container-fluid d-none d-sm-block shadow navbar navbar-expan sticky-top navbar-light bg-light'>
-            <div className='mobile-menu'>sddfdfdfd</div>
             <div className='container' style={{height:'68px'}}>
                 <NavLink to='/'>
                     <img src='img/logo.png' style={{maxWidth:'110px'}} alt='' />
@@ -118,8 +127,10 @@ export const Header = ()=> {
                     marginRight='20px'
                 />
                 <div>
-                    <button onClick={openLoginModal}  className='btn btn-primary'>ورود</button>
-                    <NavLink to='/register' className='btn btn-primary mx-2'>عضویت</NavLink>
+                    <>
+                        <button onClick={openLoginModal}  className='btn btn-primary'>ورود</button>
+                        <NavLink to='/register' className='btn btn-primary mx-2'>عضویت</NavLink>
+                    </>
                     <button onClick={openCardModal} className='btn btn-primary'>
                             <span className='badge mt-1'>{counter}</span>
                             <img src='img/card.png' style={{width:'20px'}} alt='' />
@@ -139,9 +150,22 @@ export const Header = ()=> {
                     >فروشگاه
                 </NavLink>
                 <NavLink 
-                    className='text-dark text-decoration-none nav-link' 
+                    className='
+                            text-dark 
+                            text-decoration-none 
+                            nav-link 
+                           '
+                    onMouseEnter={showDropmenu}
+                    onMouseLeave={hideDropmenu}
                     to='/blog'
                     >بلاگ
+                    <DropdownMenu 
+                        iconName='fa fa-chevron-down'
+                        dropmenu={dropmenu}
+                        li1='دیجیتال مارکتینگ'
+                        li2='سئو'
+                        li3='فروش'
+                    />
                 </NavLink>
                 <NavLink
                     className='text-dark text-decoration-none nav-link' 

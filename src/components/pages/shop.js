@@ -5,7 +5,6 @@ import { Sidebar } from '../sidebar/sidebar';
 import { MainTitle } from '../title/mainTitle';
 import { CenterDivider } from '../diveder/centerDivider';
 import { PriceBox } from '../box/priceBox';
-import { BreadCrump } from '../breasCrump/breadCrump';
 
 export const Shop= () => {
     return(

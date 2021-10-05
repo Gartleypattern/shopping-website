@@ -1,7 +1,6 @@
 import Modal from 'react-modal';
 import {CenterDivider} from '../diveder/centerDivider';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../state/index';
 
